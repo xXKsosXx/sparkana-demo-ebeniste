@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import SavoirFaire from "@/components/SavoirFaire";
 import Galerie from "@/components/Galerie";
 import MaitreArtisan from "@/components/MaitreArtisan";
+import ConfigurateurBois from "@/components/ConfigurateurBois";
 import Matieres from "@/components/Matieres";
 import Temoignages from "@/components/Temoignages";
 import Contact from "@/components/Contact";
@@ -16,6 +17,7 @@ export default function Home() {
       <SavoirFaire />
       <Galerie />
       <MaitreArtisan />
+      <ConfigurateurBois />
       <Matieres />
       <Temoignages />
       <Contact />

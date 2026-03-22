@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Serif, Manrope } from "next/font/google";
 import "./globals.css";
+import CursorCopeau from "@/components/CursorCopeau";
 
 const notoSerif = Noto_Serif({
   subsets: ["latin"],
@@ -42,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${notoSerif.variable} ${manrope.variable}`}>
       <body className="font-sans antialiased bg-surface text-on-surface">
+        <CursorCopeau />
         {children}
       </body>
     </html>
