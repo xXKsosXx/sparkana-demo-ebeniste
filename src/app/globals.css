@@ -2,26 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  border-radius: 0 !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #210f07;
+  --foreground: #ffdbce;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+::selection {
+  background: #f0bf5e;
+  color: #210f07;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #210f07;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #504440;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9c8e89;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Grayscale hover effect */
+.grayscale-hover {
+  filter: grayscale(100%);
+  transition: filter 700ms ease;
+}
+
+.grayscale-hover:hover {
+  filter: grayscale(0%);
+}
+
+/* Opacity hover effect for Matieres */
+.opacity-hover {
+  opacity: 0.5;
+  transition: opacity 500ms ease;
+}
+
+.opacity-hover:hover {
+  opacity: 1;
 }
