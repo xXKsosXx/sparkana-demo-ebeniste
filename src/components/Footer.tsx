@@ -23,7 +23,7 @@ export default function Footer() {
               {[
                 { label: "Savoir-faire", href: "#savoir-faire" },
                 { label: "Galerie", href: "#galerie" },
-                { label: "Matieres", href: "#matieres" },
+                { label: "Configurateur", href: "#configurateur" },
                 { label: "Contact", href: "#contact" },
               ].map((link) => (
                 <li key={link.href}>

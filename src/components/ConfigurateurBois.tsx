@@ -69,7 +69,7 @@ export default function ConfigurateurBois() {
   const [selectedMeuble, setSelectedMeuble] = useState(meubles[0]);
 
   return (
-    <section className="py-32 bg-surface-container">
+    <section id="configurateur" className="py-32 bg-surface-container">
       <div className="max-w-6xl mx-auto px-6 md:px-12">
         {/* Header */}
         <div className="text-center mb-16">
